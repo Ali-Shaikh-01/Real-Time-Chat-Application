@@ -43,7 +43,7 @@ Client runs on **http://localhost:5173**
 1. Open **two browser tabs** at `http://localhost:5173`
 2. In tab 1: enter username `alice`, room `room-1` → Join
 3. In tab 2: enter username `bob`, room `room-1` → Join
-4. Start chatting! ✅
+4. Start chatting! 
 
 ---
 
@@ -52,7 +52,7 @@ Client runs on **http://localhost:5173**
 ```
 socketio-chat/
 ├── server/
-│   ├── index.js          # Express + Socket.io server
+│   ├── index.js         
 │   └── package.json
 └── client/
     ├── index.html
@@ -61,21 +61,10 @@ socketio-chat/
     └── src/
         ├── main.jsx
         ├── App.jsx
-        ├── socket.js         # createSocket() factory
+        ├── socket.js         
         ├── JoinScreen.jsx
         ├── JoinScreen.module.css
         ├── ChatRoom.jsx
         └── ChatRoom.module.css
 ```
 
-## Socket Events
-
-| Event | Direction | Payload |
-|---|---|---|
-| `join` | client → server | `{ username, room }` |
-| `message` | client → server | `{ text }` |
-| `message` | server → client | `{ from, text, timestamp }` |
-| `typing` | client → server | `boolean` |
-| `typing` | server → client | `{ username, isTyping }` |
-| `system` | server → client | `{ text, timestamp }` |
-| `room_users` | server → client | `string[]` |
