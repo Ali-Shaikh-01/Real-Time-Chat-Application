@@ -83,4 +83,7 @@ you can either clone the repo and run it locally or check out the live demo.
     ```
 6. Open your browser and go to `http://localhost:5173` to access the chat application.
 
-## OR YOU CAN VISIT THE WEBSITE https://chat-project-mocha.vercel.app/
+## OR YOU CAN VISIT THE WEBSITE 
+```bash
+https://chat-project-mocha.vercel.app/
+```
