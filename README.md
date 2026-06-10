@@ -69,7 +69,7 @@ The project is fully deployed with:
 ```
 socketio-chat/
 ├── server/
-│   ├── index.js          # Express + Socket.io backend
+│   ├── index.js          
 │   └── package.json
 │
 ├── client/
