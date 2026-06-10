@@ -1,38 +1,70 @@
-# SocketChat — Real-time 1-on-1 Chat App
+# 💬 SocketChat — Real-time 1-on-1 Chat App
 
-A real-time chat application built using Socket.io, Express, and React (Vite).
+A real-time chat application built using **Socket.io, Express, and React (Vite)**.
 
-The project is fully deployed with frontend on Vercel and backend on Render, and includes handling for server cold starts using a health check system.
+The project is fully deployed with:
 
-Live Demo:
-https://chat-project-mocha.vercel.app/
+* 🌐 Frontend: Vercel
+* ⚙️ Backend: Render
+* 🔁 Health-check system to handle server cold starts
 
----
-
-## Features
-
-- Real-time messaging using Socket.io
-- Room-based chat system
-- Typing indicators
-- Live online users list per room
-- Join and leave system messages
-- Multiple chat rooms support
-- Handles backend cold start delays (Render free tier)
+🔗 **Live Demo:** https://chat-project-mocha.vercel.app/
 
 ---
 
-## Key Highlights
+## 📸 Screenshots
 
-- Production deployment (Vercel frontend + Render backend)
-- Server cold start handling using `/health` endpoint
-- Client-side server readiness detection with polling
-- Proper socket lifecycle management
-- Prevents duplicate connections and race conditions
-- Clean separation of frontend and backend
+### 🟡 Waiting for another user
+
+![Waiting Screen](./screenshots/join-waiting.png)
+
+### 🟢 Ready to join chat
+
+![Join Ready](./screenshots/join-ready.png)
+
+### 💬 Empty chat room
+
+![Empty Chat](./screenshots/chat-empty.png)
+
+### 🔥 Active conversation
+
+![Active Chat](./screenshots/chat-active.png)
 
 ---
 
-## Project Structure
+## 🚀 Features
+
+* Real-time messaging using Socket.io
+* Room-based chat system
+* Typing indicators
+* Live online users list per room
+* Join and leave system messages
+* Multiple chat rooms support
+* Handles backend cold start delays (Render free tier)
+
+---
+
+## 🔥 Key Highlights
+
+* Production deployment (Vercel frontend + Render backend)
+* Server cold start handling using `/health` endpoint
+* Client-side server readiness detection with polling
+* Proper socket lifecycle management
+* Prevents duplicate connections and race conditions
+* Clean separation of frontend and backend
+
+---
+
+## 🛠️ Tech Stack
+
+* Frontend: React (Vite)
+* Backend: Node.js, Express
+* WebSockets: Socket.io
+* Deployment: Vercel + Render
+
+---
+
+## 📂 Project Structure
 
 ```
 socketio-chat/
@@ -40,49 +72,72 @@ socketio-chat/
 │   ├── index.js          # Express + Socket.io backend
 │   └── package.json
 │
-└── client/
-    ├── index.html
-    ├── vite.config.js
-    ├── package.json
-    └── src/
-        ├── main.jsx
-        ├── App.jsx
-        ├── socket.js
-        ├── JoinScreen.jsx
-        ├── JoinScreen.module.css
-        ├── ChatRoom.jsx
-        └── ChatRoom.module.css
+├── client/
+│   ├── index.html
+│   ├── vite.config.js
+│   ├── package.json
+│   └── src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       ├── socket.js
+│       ├── JoinScreen.jsx
+│       ├── JoinScreen.module.css
+│       ├── ChatRoom.jsx
+│       └── ChatRoom.module.css
+│
+├── screenshots/
+│   ├── join-waiting.png
+│   ├── join-ready.png
+│   ├── chat-empty.png
+│   └── chat-active.png
+│
+└── README.md
 ```
 
 ---
 
-## How to use
-you can either clone the repo and run it locally or check out the live demo.
-### Local Setup
+## ⚙️ How to Use
+
+You can either run locally or use the live demo.
+
+### 🧪 Local Setup
+
 1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   ```
-2. Navigate to the server directory and install dependencies:
-   ```bash
-    cd socketio-chat/server
-    npm install
-    ```
-3. Start the backend server:
-    ```bash
-    npm start
-    ```
-4. In a new terminal, navigate to the client directory and install dependencies:
-    ```bash
-    cd socketio-chat/client
-    npm install
-    ```
-5. Start the frontend development server:
-    ```bash
-    npm run dev
-    ```
-6. Open your browser and go to `http://localhost:5173` to access the chat application.
 
-## OR YOU CAN VISIT THE WEBSITE 
-https://chat-project-mocha.vercel.app/
+```bash
+git clone <repository-url>
+```
 
+2. Setup backend:
+
+```bash
+cd socketio-chat/server
+npm install
+npm start
+```
+
+3. Setup frontend:
+
+```bash
+cd ../client
+npm install
+npm run dev
+```
+
+4. Open browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🌍 Live Version
+
+👉 https://chat-project-mocha.vercel.app/
+
+---
+
+## 👤 Author
+
+Ali Shaikh
